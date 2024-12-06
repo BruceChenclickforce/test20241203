@@ -2,6 +2,8 @@
 FROM php:8.1-fpm-alpine
 RUN apk add --no-cache \
   curl \
+  nginx \
+  composer \
   supervisor
 
 # Copies your code file from your action repository to the filesystem path `/` of the container
