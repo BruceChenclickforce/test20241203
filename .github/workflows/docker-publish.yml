@@ -67,8 +67,8 @@ jobs:
           tags: |
             type=ref,event=branch
             type=ref,event=pr
-            type=semver,pattern={{version}}
-            type=semver,pattern={{major}}.{{minor}}
+            # type=semver,pattern={{version}}
+            # type=semver,pattern={{major}}.{{minor}}
             type=raw,value={{date 'YYYYMMDD-HHmmss' tz='Asia/Taipei'}}
 
       # Build and push Docker image with Buildx (don't push on PR)
